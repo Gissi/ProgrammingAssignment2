@@ -1,7 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+## functions to store matrix inverse cached in memory. For heavy computational inverses of matrizes 
 
-## Write a short comment describing this function
+
+## creating a function that points to another functions. defining all that functions to 
+## work with the matrix. 
+## functions available are 
+## 1. defining a matrix with a superassignment modifying the variable outside of the enviroment
+## 2. setting inverse matrix with a superassignment modifying the variable outside of the enviroment
+## 3. Get the input in the function i.e the matrix
+## 4. Get the assigned inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -18,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## caluclating the inverse of the matrix only if it is not already stored in the cache. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
